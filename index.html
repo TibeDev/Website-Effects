@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/styling/style.css" />
+  </head>
+  <body>
+    <!-- #region Scramble effect-->
+    <!-- 
+
+    1) You give your element with the text content a class called "scramble"
+    2) You add data called data-words="Word1, Word2". 
+          These are the words it's gonna cycle through.
+          !!!YOU HAVE TO PUT A COMMA BETWEEN THE WORDS TO MARK A NEW WORD!!!
+
+    3) You add data called data-interval="1500" 
+          This is the time before it scrambles to a new word
+    
+    4) Last step you reference your scramble.js at the bottom of your body
+
+    -->
+
+    <span
+      class="scramble"
+      data-words="Tibe Van den Brande, Cool guy"
+      data-interval="1500"
+    ></span>
+    <!-- #endregion-->
+
+    <script src="./src/javascript/scramble.js"></script>
+    <!-- Scramble effect -->
+  </body>
+</html>
