@@ -1,4 +1,6 @@
-# </Website effects>
+# &lt;/WEBSITE EFFECT&gt;
+
+<br>
 
 ## //For what is this?
 
@@ -9,29 +11,32 @@ These will be effects that I made myself just to practice my front-end skills. S
 Of course you can!\
 Instructions down below!
 
-# </Current effects>
+<br>
 
-## Text scramble
-1) You give your element with the text content a class called "scramble
+# &lt;/CURRENT EFFECTS&gt;
+
+## //Text scramble
+1) You give your element with the text content a class called "scramble.
    
     ```HTML
     <span class="scramble"></span>
     ```
     
-3) You add data called data-words="Word1, Word2".
-!!!Note that between each word needs to be a comma (,) to define a new word!!!
+3) You add data called data-words="Word1, Word2". <br>
+Note that between each word needs to be a comma (,) to define a new word.
 
     ```HTML
     <span class="scramble" data-words="Word1 , Word2"></span>
     ```
    
-4) You add data called data-interval="1500"
+4) You add data called data-interval="1500". <br>
+   This is the amount of time before it scrambles to the next word.
    
     ```HTML
     <span class="scramble" data-words="Word1 , Word2" data-interval="1500"></span>
     ```
 
-6) Last step you reference your scramble.js at the bottom of your body
+6) Last step you reference your scramble.js at the bottom of your body.
     ```HTML
     <body>
         <span class="scramble" data-words="Word1 , Word2" data-interval="1500"></span>
