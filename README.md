@@ -23,13 +23,14 @@ Instructions down below!
     ```
     
 3) You add data called data-words="Word1, Word2". <br>
-Note that between each word needs to be a comma (,) to define a new word.
+Note that between each word needs to be a comma (,) to define a new word. <br>
+You can also just put one word. Then it wil just scramble that one word.
 
     ```HTML
     <span class="scramble" data-words="Word1 , Word2"></span>
     ```
    
-4) You add data called data-interval="1500". <br>
+5) You add data called data-interval="1500". <br>
    This is the amount of time before it scrambles to the next word.
    
     ```HTML
@@ -43,6 +44,7 @@ Note that between each word needs to be a comma (,) to define a new word.
         <script src="scramble.js"></script>
     </body>
     ```
+7) Quick note if your text is centered to the center there could be some visual problems with the effect. It will still work so dont worry but if your words have a big difference in length it might cause some visual problems if you have it centered to the center.
 ## Demo
 
 You can view the effects [here](https://tibedev.github.io/Website-Effects/)
