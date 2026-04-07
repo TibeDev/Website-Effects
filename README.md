@@ -44,7 +44,7 @@ You can also just put one word. Then it wil just scramble that one word.
         <script src="scramble.js"></script>
     </body>
     ```
-7) Quick note if your text is centered to the center there could be some visual problems with the effect. It will still work so dont worry but if your words have a big difference in length it might cause some visual problems if you have it centered to the center.
+7) Quick note if your text is centered there could be some visual problems with the effect. It will still work but if your words have a big difference in length it might cause some visual problems if your text is centered.
 ## Demo
 
 You can view the effects [here](https://tibedev.github.io/Website-Effects/)
