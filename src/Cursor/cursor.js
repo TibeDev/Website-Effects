@@ -3,6 +3,11 @@ var cursors = [];
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".cursor").forEach((cursor) => {
     const duration = cursor.dataset.duration;
+
+    cursor.style.transform = "translate(-50%, -50%)";
+    cursor.style.position = "fixed";
+    cursor.style.pointerEvents = "none";
+
     cursors.push({ obj: cursor, duration: duration });
   });
 });
@@ -17,16 +22,15 @@ document.body.onpointermove = (event) => {
   yPos = clientY;
 
   for (let i = 0; i < cursors.length; i++) {
-    AnimateCursor(cursors[i].obj, parseInt(cursors[i].duration));
+    AnimateCursor(cursors[i]);
   }
 };
-function AnimateCursor(cursor, duration) {
-  cursor.style.transform = "translate(-50%, -50%)";
-  cursor.animate(
+function AnimateCursor(cursor) {
+  cursor.obj.animate(
     {
       left: `${xPos}px`,
       top: `${yPos}px`,
     },
-    { duration: duration, fill: "forwards" },
+    { duration: parseInt(cursor.duration), fill: "forwards" },
   );
 }

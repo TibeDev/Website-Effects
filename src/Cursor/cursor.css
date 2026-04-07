@@ -1,22 +1,17 @@
 body {
   cursor: none;
 }
-#cursor,
-#cursorOutline {
-  position: fixed;
-  pointer-events: none;
-  border-radius: 50%;
-  display: flex;
-}
 #cursor {
   width: 6px;
   aspect-ratio: 1;
 
   border: 2px solid var(--accent-color1);
+  border-radius: 50%;
 }
 #cursorOutline {
   width: 55px;
   aspect-ratio: 1;
 
   border: 2px solid rgba(70, 70, 70, 0.463);
+  border-radius: 50%;
 }
