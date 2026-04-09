@@ -1,7 +1,5 @@
 # &lt;/WEBSITE EFFECT&gt;
 
-<br>
-
 ## //For what is this?
 
 These will be effects that I made myself just to practice my front-end skills. So alot of these will be copy's of already existing ones or unique effects.
