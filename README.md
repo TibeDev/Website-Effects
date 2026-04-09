@@ -9,8 +9,6 @@ These will be effects that I made myself just to practice my front-end skills. S
 Of course you can!\
 Instructions down below!
 
-<br>
-
 # &lt;/CURRENT EFFECTS&gt;
 
 ## //Text scramble
