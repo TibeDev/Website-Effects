@@ -12,58 +12,62 @@ Instructions down below!
 # &lt;/CURRENT EFFECTS&gt;
 
 ## //Text scramble
-1) You give your element with the text content a class called "scramble".
-   
+
+1.  You give your element with the text content a class called "scramble".
+
     ```HTML
     <span class="scramble"></span>
     ```
-    
-3) You add data called " data-words='Word1, Word2' ". <br>
-Note that between each word needs to be a comma (,) to define a new word. <br>
-You can also just put one word. Then it wil just scramble that one word.
 
-    ```HTML
-    <span class="scramble" data-words="Word1 , Word2"></span>
-    ```
-   
-5) You add data called " data-interval='1500' ". <br>
-   This is the amount of time before it scrambles to the next word.
-   
+2.  You add data called " data-words='Word1, Word2' ". <br>
+    Note that between each word needs to be a comma (,) to define a new word. <br>
+    You can also just put one word. Then it wil just scramble that one word.
+
+        ```HTML
+        <span class="scramble" data-words="Word1 , Word2"></span>
+        ```
+
+3.  You add data called " data-interval='1500' ". <br>
+    This is the amount of time before it scrambles to the next word.
+
     ```HTML
     <span class="scramble" data-words="Word1 , Word2" data-interval="1500"></span>
     ```
 
-6) Last step you reference your scramble.js at the bottom of your body.
-    ```HTML
+4.  Last step you reference your scramble.js at the bottom of your body.
+    ````HTML
     <body>
-        <span class="scramble" data-words="Word1 , Word2" data-interval="1500"></span>
-    
-        <script src="scramble.js"></script>
-    </body>
-    ```
-!!!Quick note if your text is centered there could be some visual problems with the effect. It will still work but if your words have a big difference in length it might cause some visual problems if your text is centered.!!!
+    <span class="scramble" data-words="Word1 , Word2" data-interval="1500"></span>
+            <script src="scramble.js"></script>
+        </body>
+        ```
+    !!!Quick note if your text is centered there could be some visual problems with the effect. It will still work but if your words have a big difference in length it might cause some visual problems if your text is centered.!!!
+    ````
 
 ## //Cursor
-1) You give your div you want to be a cursor a class called "cursor".
-   
+
+1. You give your div you want to be a cursor a class called "cursor".
+
    ```HTML
    <div class="cursor"></div>
    <div class="cursor"></div>
    ```
+
    **Why mutliple?** <br>
    The system is made so you can have multiple cursors at one time. Go look at the [demo](https://tibedev.github.io/Website-Effects/) to see how this can look.
 
-2) You add data called " data-duration='500' ". <br>
+2. You add data called " data-duration='500' ". <br>
    This the smoothness of the movement. <br>
    Basicly 0 means the cursor will directly follow the mouse and 500 will make it take some time.
-   
+
    ```HTML
    <div class="cursor" data-duration="0"></div>
    <div class="cursor" data-duration="500"></div>
    ```
-3) Then You give your cursor(s) some styling.<br>
-You can use the CSS I made or make your own. <br>
-Just add a id with whatever name you want.
+
+3. Then You give your cursor(s) some styling.<br>
+   You can use the CSS I made or make your own. <br>
+   Just add a id with whatever name you want.
 
    ```HTML
    <div class="cursor" id="cursor" data-duration="0"></div>
@@ -74,7 +78,7 @@ Just add a id with whatever name you want.
    #cursor {
      width: 6px;
      aspect-ratio: 1; /*Makes width and height the same*/
-   
+
      border: 2px solid #bcb9b2;
      border-radius: 50%;
    }
@@ -82,21 +86,68 @@ Just add a id with whatever name you want.
    #cursorOutline {
      width: 55px;
      aspect-ratio: 1; /*Makes width and height the same*/
-   
+
      border: 2px solid rgba(70, 70, 70, 0.463);
      border-radius: 50%;
    }
    ```
 
-5) Last step you reference your cursor.js at the bottom of your body.
+4. Last step you reference your cursor.js at the bottom of your body.
+
    ```HTML
     <body>
         <div class="cursor" id="cursor" data-duration="0"></div>
         <div class="cursor" id="cursorOutline" data-duration="500"></div>
-   
+
         <script src="cursor.js"></script>
     </body>
-    ```
+   ```
+
+## //Clock
+
+1. Add a div with the id `analog-clock`. This is the clock face container.
+
+   ```HTML
+   <div id="analog-clock"></div>
+   ```
+
+2. Inside it, add a div with the id `time-indicators`. The script will automatically place 12 tick marks around the clock face. But you can change this value in the script.
+
+   ```HTML
+   <div id="analog-clock">
+       <div id="time-indicators"></div>
+   </div>
+   ```
+
+3. Still inside `analog-clock`, add the three clock hands. Each needs the class `hand` and its own id.
+
+   ```HTML
+   <div id="analog-clock">
+       <div id="time-indicators"></div>
+       <div class="hand" id="hours-hand"></div>
+       <div class="hand" id="minutes-hand"></div>
+       <div class="hand" id="seconds-hand"></div>
+   </div>
+   ```
+
+4. Reference `clock.css` in your `<head>` and `clock.js` at the bottom of your `<body>`.
+
+   ```HTML
+   <head>
+       <link rel="stylesheet" href="clock.css">
+   </head>
+   <body>
+       <div id="analog-clock">
+           <div id="time-indicators"></div>
+           <div class="hand" id="hours-hand"></div>
+           <div class="hand" id="minutes-hand"></div>
+           <div class="hand" id="seconds-hand"></div>
+       </div>
+
+       <script src="clock.js"></script>
+   </body>
+   ```
+
 ## Demo
 
 You can view the effects [here](https://tibedev.github.io/Website-Effects/)

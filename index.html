@@ -18,6 +18,8 @@
     <!-- Cursor -->
     <link rel="stylesheet" href="./src/Cursor/cursor.css" />
 
+    <link rel="stylesheet" href="./src/Clock/clock.css" />
+
     <!-- #endregion-->
   </head>
   <body>
@@ -27,12 +29,25 @@
     <!-- #endregion-->
 
     <!-- #region Scramble effect-->
-    <span
-      class="scramble"
-      data-words="Tibe Van den Brande, Cool guy"
-      data-interval="1500"
-    ></span>
+    <section>
+      <span
+        class="scramble"
+        data-words="Tibe Van den Brande, Cool guy"
+        data-interval="1500"
+      ></span>
+    </section>
     <!-- #endregion-->
+
+    <!-- #region Analog clock-->
+    <section>
+      <div id="analog-clock">
+        <div id="time-indicators"></div>
+        <div class="hand" id="seconds-hand"></div>
+        <div class="hand" id="minutes-hand"></div>
+        <div class="hand" id="hours-hand"></div>
+      </div>
+    </section>
+    <!-- #endregion -->
 
     <!-- #region Javascript Import   -->
 
@@ -41,6 +56,9 @@
 
     <!-- Cursor -->
     <script src="./src/Cursor/cursor.js"></script>
+
+    <!-- Clock -->
+    <script src="./src/Clock/clock.js"></script>
 
     <!-- #endregion -->
   </body>

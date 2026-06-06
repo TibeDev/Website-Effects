@@ -1,0 +1,43 @@
+#analog-clock {
+  position: relative;
+  height: 8rem;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: var(--main-color2);
+}
+#time-indicators {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--accent-color2);
+  height: 0.8rem;
+  width: 0.3rem;
+  border-radius: 999px;
+}
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border-radius: 999px;
+  transform-origin: bottom center;
+}
+#seconds-hand {
+  width: 0.15rem;
+  height: 43%;
+  background-color: rgb(255, 58, 58);
+}
+#minutes-hand {
+  width: 0.15rem;
+  height: 43%;
+  background-color: rgb(255, 255, 255);
+}
+#hours-hand {
+  width: 0.15rem;
+  height: 35%;
+  background-color: rgb(202, 202, 202);
+}
