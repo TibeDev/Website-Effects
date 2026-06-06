@@ -1,6 +1,9 @@
 body {
   cursor: none;
 }
+.cursor {
+  z-index: 10000;
+}
 #cursor {
   width: 6px;
   aspect-ratio: 1;
