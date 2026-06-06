@@ -23,9 +23,9 @@ Instructions down below!
     Note that between each word needs to be a comma (,) to define a new word. <br>
     You can also just put one word. Then it wil just scramble that one word.
 
-        ```HTML
-        <span class="scramble" data-words="Word1 , Word2"></span>
-        ```
+    ```HTML
+    <span class="scramble" data-words="Word1 , Word2"></span>
+    ```
 
 3.  You add data called " data-interval='1500' ". <br>
     This is the amount of time before it scrambles to the next word.
